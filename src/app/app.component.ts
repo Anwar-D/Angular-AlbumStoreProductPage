@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { AppComponent } from './app.component';
+import { ProductPageComponent } from './product-page/product-page.component';
+import { ProductDescriptionComponent } from './product-description/product-description.component';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+@NgModule({
+  declarations: [
+    AppComponent,
+    ProductPageComponent,
+   ProductDescriptionComponent
+ ],
+ imports: [
+   BrowserModule,
+   FormsModule,
+    HttpModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppComponent {
-  title = 'app works!';
-}
+export class AppModule { }
